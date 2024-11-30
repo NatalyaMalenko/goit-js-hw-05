@@ -6,6 +6,10 @@
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи.
 // У консоль будуть виведені результати її роботи.
+
+const sortByDescendingFriendCount = (users) =>
+  users.toSorted((a, b) => b.length - a.length);
+
 console.log(
   sortByDescendingFriendCount([
     {

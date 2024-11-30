@@ -8,6 +8,14 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи.
 // У консоль будуть виведені результати її роботи.
 
+const getTotalBalanceByGender = (users, gender) =>
+  users.reduce((acc, el) => {
+    if (el.gender === gender) {
+      acc += el.balance;
+    }
+    return acc;
+  }, 0);
+
 const clients = [
   {
     name: "Moore Hensley",
